@@ -1,0 +1,40 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3489
+
+    let uri = urilib#new('http://twitter.com/tyru')
+
+	" "http"
+    echo uri.scheme()
+
+	" "twitter.com"
+    echo uri.host()
+
+	" "/tyru"
+    echo uri.path()
+
+	" "//twitter.com/tyru"
+    echo uri.opaque()
+
+	" ""
+    echo uri.fragment()
+
+
+    let uri = urilib#new('http://d.hatena.ne.jp/tyru/20100619/git_push_vim_plugins_to_github#c')
+
+	" "http"
+    echo uri.scheme()
+
+	" "d.hatena.ne.jp"
+    echo uri.host()
+
+	" "/tyru/20100619/git_push_vim_plugins_to_github"
+    echo uri.path()
+
+	" "//d.hatena.ne.jp/tyru/20100619/git_push_vim_plugins_to_github"
+    echo uri.opaque()
+
+	" "c"
+    echo uri.fragment()
+
+
+
+Repository: http://github.com/tyru/urilib.vim
